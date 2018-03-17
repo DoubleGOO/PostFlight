@@ -1,0 +1,18 @@
+--cpu Cortex-M4.fp
+".\objects\main.o"
+".\objects\stm32f4xx_it.o"
+".\objects\system_stm32f4xx.o"
+".\objects\misc.o"
+".\objects\stm32f4xx_gpio.o"
+".\objects\stm32f4xx_rcc.o"
+".\objects\stm32f4xx_usart.o"
+".\objects\stm32f4xx_tim.o"
+".\objects\pwm.o"
+".\objects\delay.o"
+".\objects\sys.o"
+".\objects\usart.o"
+".\objects\startup_stm32f40_41xxx.o"
+--strict --scatter ".\Objects\subcontrol.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\subcontrol.map" -o .\Objects\subcontrol.axf
